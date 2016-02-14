@@ -32,11 +32,13 @@ class HtmlParser(object):
         <h1>Python</h1>"""
         data = "lemmaWgt-lemmaTitle-title"
         title_node = soup.find('dd', class_=data).find("h1")
+        #if hasattr(title_node, "get_text")
         res_data['title'] = title_node.get_text()
 
         """
         <div class="lemma-summary" label-module="lemmaSummary">
         """
         summary_node = soup.find("div", class_="lemma-summary")
+        # print new_url, summary_node
         res_data['summary'] = summary_node.get_text()
         return res_data
