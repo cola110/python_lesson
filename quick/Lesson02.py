@@ -10,3 +10,6 @@ print a
 print type(a)
 
 print a,"----" ,type(a)
+
+
+print True
