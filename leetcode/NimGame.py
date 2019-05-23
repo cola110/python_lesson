@@ -1,10 +1,11 @@
 class Solution(object):
     def canWinNim(self, n):
-		if n%4 == 0:
-        	return False
+        if n % 4 == 0:
+            return False
         else:
-        	return True
+            return True
+
 
 if __name__ == '__main__':
-	sl = new Solution()
-	canWinNim(4)
+    sl = Solution()
+    print sl.canWinNim(4)
